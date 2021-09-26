@@ -13,16 +13,40 @@
     <h1>Product Pick</h1>
   </header>
   <main>
-  <form>
     <!-- write your html here-->
     <!-- try writing out the requirements first-->
+    <div class = "form">
+    <form>
+      <label for="fname">Full Name:</label><br>
+      <input type="text" id="fname" name="fname" value="" placeholder = "name..." minlength="2" required><br>
+      <label for="email">Contact Email:</label><br>
+      <input type="email" id="email" name="email" value="" placeholder = "email@email.com..." required><br>
+      <label for="colors">Preferred Color:</label><br>
+      <select name="colors" id="colors" value = "" required>
+        <option value ="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+      </select> <br>
+      <label for="date">Collection Date:</label><br>
+      <input type="date" id="date" name="date" value="" required>
+      <br>
+      <input type="submit" value="Submit">
   </form>
+  </div>
 
   </main>
   <footer>
     <!-- change to your name-->
-    <h2>By HOMEWORK SOLUTION</h2>
+    <h2>Aaishah's HOMEWORK SOLUTION</h2>
   </footer>
+  <script>
+    const numWks = 4;
+    let delStart = new Date();
+    delStart.setDate(delStart.getDate() + numWks*7);
+    delStart = delStart.toLocaleDateString().split('/');
+    delStart = delStart[2] + '-' + delStart[1] + '-' + delStart[0];
+    document.getElementById('date').min = delStart;
+  </script>
 </body>
 
 </html>
