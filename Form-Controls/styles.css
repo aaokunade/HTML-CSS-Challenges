@@ -1,0 +1,33 @@
+main {
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+form {
+    display: inline-block;
+    align-items: center;
+    /* padding-bottom: 2rem; */
+    margin-bottom: 2rem;
+}
+
+select option {
+    margin: 40px;
+    background: rgb(250, 249, 249);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(248, 245, 245, 0.945);
+  }
+  
+  select option[value="red"] {
+    background: rgba(241, 4, 4, 0.712);
+  }
+  
+  select option[value="blue"] {
+    background: rgba(59, 7, 247, 0.856);
+  }
+  
+  select option[value="yellow"] {
+    background: rgba(248, 244, 11, 0.795);
+  }
